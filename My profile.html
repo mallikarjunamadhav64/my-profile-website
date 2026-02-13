@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: monospace;
+            font-size: 18px;
+        }
+
+        body{
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        
+        header{
+            height: 100vh;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        header h1{
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+
+        .button{
+            height: 50px;
+            width: 160px;
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .button:hover{
+            background-color: brown;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        section{
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        section h1{
+            font-size: 38px;
+            color: #333;
+        }
+
+        section p, li{
+            font-size: 20px;
+        }
+
+        hr{
+            width: 60%;
+            border: none;
+            height: 4px;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            margin: 60px auto;
+            border-radius: 10px;
+        }
+
+        img{
+            width: 220px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        ol{
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+
+        
+        form{
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .submit-btn{
+            background: #1e3c72;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .submit-btn:hover{
+            background: #2a5298;
+        }
+
+        footer{
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>WELCOME TO MY PROFILE</h1>
+    <a href="#about"><button class="button">About</button></a>
+    <a href="#skills"><button class="button">My Skills</button></a>
+    <a href="#contact"><button class="button">Contact Me</button></a>
+</header>
+
+<section id="about">
+    <h1>About Me</h1>
+    <img src="https://picsum.photos/200" alt="profile">
+    <p>
+        I am a good boy with bad habits <br>
+        I like to read books and eat <br>
+        I am studying in <em>SRM UNIVERSITY</em>
+    </p>
+</section>
+
+<hr>
+
+<section id="skills">
+    <h1>My Skills</h1>
+    <ol>
+        <li>Reading books</li>
+        <li>Watching movies</li>
+        <li>Doing something new</li>
+    </ol>
+</section>
+
+<hr>
+
+<section id="contact">
+    <h1>Contact Me</h1>
+    <p>Thanks for reaching me</p>
+
+    <form>
+        <label>Username</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <p><b>Choose Gender</b></p>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female <br><br>
+
+        <button class="submit-btn">Submit</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Mallikarjuna Madhav | All Rights Reserved
+</footer>
+
+</body>
+</html>
